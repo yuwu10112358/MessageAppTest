@@ -1,0 +1,4 @@
+############
+*.nsproj
+node_modules/
+obj/

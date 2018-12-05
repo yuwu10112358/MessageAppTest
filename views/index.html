@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head><link rel="stylesheet" href="main.css" type="text/css"></head>
+    <body>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="shared.js"></script>
+        <div>
+            <h1 username="{{ username }}">Logged in as {{ username }}</h1>
+        </div>
+        <div id="divOnlineList">
+            <ul id="onlineList">
+            </ul>
+        </div>
+        <div id="divChatBox">
+        <div id="divChatLog">
+            <label id="chatLogTitle">No conversation</label>
+            <table id='tblChatLog'>
+            </table>
+        </div>
+        <div id='messageInput'>
+            <input id="recipient" type="text" />
+            <input id='txtBar' type='text' />
+            <input type='button' id='btnSend' value="Send" />
+        </div>
+        </div>
+        <script src="Users-client.js"></script>
+        <script src="message-client.js"></script>
+    </body>
+</html>

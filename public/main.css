@@ -1,0 +1,58 @@
+﻿#divChatBox {
+    width: 600px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+#divChatLog {
+
+}
+#txtBar {
+    width: 300px;
+}
+#divOnlineList {
+    width: 100px;
+    height: 400px;
+    background-color: Aqua;
+    float: left;
+}
+#chatLogTitle {
+    margin-left: 50px;
+    font-size: 15pt;
+}
+#messageInput {
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+}
+
+.tdMessage {
+    width: 500px;
+    font-family: Arial;
+    padding-bottom:10px;
+    padding-top: 10px;
+}
+.self {
+    text-align: right;
+}
+
+.others {
+    text-align: left;
+}
+
+.lblMessage {
+    margin-left: 5px;
+    margin-right: 25px;
+    border: solid;
+    border-width: 1px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.lblSender {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.clickable {
+    cursor: pointer;
+}
