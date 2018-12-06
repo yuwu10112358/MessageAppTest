@@ -1,4 +1,4 @@
 ############
-*.nsproj
+*.njsproj
 node_modules/
 obj/

@@ -2,9 +2,9 @@
 <html>
 	<head><link rel="stylesheet" href="main.css" type="text/css"></head>
     <body>
-        <script src="/socket.io/socket.io.js"></script>
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="shared.js"></script>
+        <!--<script src="/socket.io/socket.io.js"></script>-->
+        <!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+        <script data-main="main" src="require.js"></script>
         <div>
             <h1 username="{{ username }}">Logged in as {{ username }}</h1>
         </div>
@@ -24,7 +24,5 @@
             <input type='button' id='btnSend' value="Send" />
         </div>
         </div>
-        <script src="Users-client.js"></script>
-        <script src="message-client.js"></script>
     </body>
 </html>

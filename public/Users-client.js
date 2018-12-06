@@ -1,18 +1,21 @@
 ﻿'use strict';
+if (typeof define !== 'function') { var define = require('amdefine')(module) }
 // JQuery for handling user related stuff
-var channel = channel || io('http://localhost:3000');
-$(function () {
-    let getCurrentUsername = function () {
-        return $("h1[username]").attr("username"); 
-    }
-    channel.on('connect', () => {
-        let username = getCurrentUsername();
-        channel.emit("userLogin", username);
+define(['jquery', './common'], function ($, Common) {
+    let channel = Common.getChannel();
+    $(function () {
+        let getCurrentUsername = function () {
+            return $("h1[username]").attr("username");
+        }
+        channel.on('connect', () => {
+            let username = getCurrentUsername();
+            channel.emit("userLogin", username);
+        });
+
+        //socket event handling
+
+        //page event handling
+
     });
-    let chatLog = $('#chatLog');
-
-    //socket event handling
-
-    //page event handling
-
+    return true;
 });

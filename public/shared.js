@@ -1,22 +1,29 @@
 ﻿'use strict';
 
-const USEREVENT = {
-    USER_LOGIN: "userLogin",
-    USER_LOGIN_ACK: "userLoginAck",
-    USER_LOGOUT: "userLogout",
-    USER_TEST: "test"
+if (typeof define !== 'function') {
+    var define = require('amdefine')(module);
 }
 
-const MESSAGEEVENT = {
-    MESSAGE_SEND: "messageSend",
-    MESSAGE_DELIVER: "messageDeliver",
-    MESSAGE_RECEIVED: "messaageReceived",
-    MESSAGE_READ: "messageRead",
-    NEW_CONVERSATION: "newConv",
-    LOAD_MESSAGES: "loadMessages"
-}
+define(function () {
+    const USEREVENT = {
+        USER_LOGIN: "userLogin",
+        USER_LOGIN_ACK: "userLoginAck",
+        USER_LOGOUT: "userLogout",
+        USER_TEST: "test"
+    }
 
-module.exports = {
-    USEREVENT: USEREVENT,
-    MESSAGEEVENT: MESSAGEEVENT
-};
+    const MESSAGEEVENT = {
+        MESSAGE_SEND: "messageSend",
+        MESSAGE_DELIVER: "messageDeliver",
+        MESSAGE_RECEIVED: "messaageReceived",
+        MESSAGE_READ: "messageRead",
+        NEW_CONVERSATION: "newConv",
+        LOAD_MESSAGES: "loadMessages"
+    }
+
+    return {
+        USEREVENT: USEREVENT,
+        MESSAGEEVENT: MESSAGEEVENT
+    };
+
+});
